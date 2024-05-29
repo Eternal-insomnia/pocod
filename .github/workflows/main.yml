@@ -19,7 +19,7 @@ jobs:
       - name: build and push image to DockerHub
         uses: mr-smithers-excellent/docker-build-push@v5
         with:
-          image: ${{ secrets.DOCKERHUB_USERNAME }}/tasklist
+          image: ${{ secrets.DOCKERHUB_USERNAME }}/pocod
           tags: 0.0.$GITHUB_RUN_NUMBER, latest
           dockerfile: Dockerfile
           registry: docker.io
